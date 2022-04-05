@@ -9,26 +9,20 @@ let maxAttempt = 0
 let e = 0
 
 // funzioni
-function nulla(testo){
-    testo.classList.add('none')
-}
 
 function aggiunta(riga){
     riga.classList.add('height')
 }
 
 function crea(){
-    batt.innerHTML = `<p class="inizio">Premi per iniziare</p>
-    <div class="row"></div>`
+    batt.innerHTML = `<div class="row"></div>`
     const riga = document.querySelector('.row')
-    const testo = document.querySelector('.inizio')
     riga.innerHTML = ''
     for(let i=1; i<=colNum; i++){
         riga.innerHTML += `
         <div class="col ${stage.value}">${i}</div>
         `
     }
-    nulla(testo)
     aggiunta(riga)
 }
 
@@ -76,6 +70,7 @@ button.addEventListener('click', function(){
     for(let c=0; c<casella.length; c++){
         casella[c].addEventListener('click', function colore(){
            casella[c].classList.add('back')
+           casella[c].removeEventListener('click', colore)
            contatore++
            if(bombe.includes(parseInt(this.innerText))){
             casella[c].classList.add('red')
