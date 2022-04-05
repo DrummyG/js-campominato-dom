@@ -1,0 +1,100 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.left{
+    height: 53px;
+}
+
+.title{
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: bold;
+    line-height: 80px;
+    margin: 0px;
+}
+
+.right{
+    margin-top: 30px;
+}
+
+#battlefield{
+    background-color: lightgreen;
+    height: 80vh;
+    width: 100%;
+}
+
+.inizio{
+    font-size: xx-large;
+    text-align: center;
+    line-height: 70vh;
+}
+
+.fine{
+    text-align: center;
+    font-size: larger;
+}
+
+.row{
+    width: 540px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.col{
+    border: 1px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Easy{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.Hard{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.Crazy{
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+}
+
+footer{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.none{
+    display: none;
+}
+
+.height{
+    height: 100%;
+}
+
+.back{
+    background-color: rgb(82, 82, 190);
+    cursor: default;
+}
+
+.red{
+    background-color: red !important;
+}
